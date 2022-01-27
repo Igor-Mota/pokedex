@@ -1,0 +1,48 @@
+.input-container{
+  
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.input-group{
+
+  width: 650px;
+  border-radius: 18px;
+  height: 35px;
+  border: none;
+  box-shadow: -3px 3px 1px gray, -3px -3px 1px gray,3px 3px 1px gray, 3px 3px 1px gray;
+}
+.input-search-a-pokemon{
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 100%;
+  font-size: large;
+  padding-left: 15px;
+}
+.poke-list{
+  background-color: #fff;
+  position: relative;
+  z-index: 5;
+  max-height: 500px;
+  overflow: auto;
+
+}
+.poke-list li{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 55px;
+
+}
+
+.poke-list li:hover{
+  background-color: aliceblue;
+}

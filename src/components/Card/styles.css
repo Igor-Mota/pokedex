@@ -1,0 +1,65 @@
+.card{
+  width: 200px;
+  height: 250px;
+  border-radius: 15%;
+  border: 4px solid gray;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.card:hover{
+  cursor: pointer;
+}
+.card button:hover{
+  cursor: pointer;
+}
+.card:hover{
+  
+  box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
+}
+.card-image{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.card-image img{
+width: 220px;
+height: 220px;
+}
+
+
+.line{
+  background-color: #0000;
+  width: 80%;
+  height: 2px;
+}
+
+ul{
+  list-style: none;
+}
+
+ button{
+
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  height: 25px;
+}
+
+ butto:hover{
+  cursor: pointer;
+}
+ul li{
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+ul li:hover{
+  cursor: pointer;
+}
