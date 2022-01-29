@@ -30,7 +30,7 @@
   position: relative;
   z-index: 5;
   max-height: 500px;
-  overflow: auto;
+  overflow: hidden;
 
 }
 .poke-list li{
@@ -43,6 +43,19 @@
 
 }
 
-.poke-list li:hover{
-  background-color: aliceblue;
+
+.btn-go-to-details{
+  height:65px;
+  background: transparent;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+
+}
+
+.btn-go-to-details:hover{
+  background: aliceblue;
 }

@@ -1,11 +1,9 @@
-import React from "react";
-import './styles.css'
+import React from "react"
 import {useNavigate} from 'react-router-dom'
 import { useQuery } from 'react-query'
-
-import axios from "axios";
-
-
+import axios from "axios"
+import './styles.css'
+import 'react-activity/dist/Dots'
 
 interface IPokemonProps {
   pokemon: {
@@ -26,6 +24,7 @@ const Card = ({ pokemon }: IPokemonProps): JSX.Element => {
   if (isSuccess) {
     return (
       <div className="card">
+
           <button 
               onClick={() => {
            

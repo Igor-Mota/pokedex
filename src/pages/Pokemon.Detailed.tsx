@@ -7,12 +7,10 @@ const PokemonDetail: React.FC = () => {
   const location = useLocation()
   const navigate = useNavigate()
 
-
   const pokemon_info = location.pathname.replace(/[/][a-z]+[/]/, '')
   const pokemon_id = pokemon_info.replace(/\D+/g, '')
   const pokemon_name = pokemon_info.replace(/\d+/, '')
-
-
+  
   const imageUrl = `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemon_id}.svg`
 
   return (
@@ -24,7 +22,8 @@ const PokemonDetail: React.FC = () => {
 
         <div className='card-details'>
           <div className='top-side'>
-            <img src={imageUrl} alt="pokemon" className='pokemon-hight-image' />
+
+            <img src={imageUrl} alt="Foto do pokemon" className='pokemon-hight-image' />
           </div>
           <div className='bot-side'>
             <h4>{pokemon_name}</h4>
@@ -33,8 +32,5 @@ const PokemonDetail: React.FC = () => {
       </div>
     </div>
   )
-
-
 }
-
 export default PokemonDetail;

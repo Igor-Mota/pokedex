@@ -19,10 +19,11 @@ const jsonToCsv = (json:object | Array<object>) => {
          }
         }
       })
-      control = control.replace(/\}+/gm,``)
-      control = control.replace(/([png])\,/gm, '$1\n')
+      control = control.replace(/}+/gm,``)
+      control = control.replace(/([png]),/gm, '$1\n')
       control = control.replace(/\n(https)/gm,',$1')
-  }
+      console.log(control)
+    }
   return control
 }
 export { jsonToCsv }
